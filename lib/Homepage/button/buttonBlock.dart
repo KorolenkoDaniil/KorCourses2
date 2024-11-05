@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:korcourses/design/colors.dart';
+import '../../CreateAccount/createAccountPage.dart';
 import '../../design/dimensions.dart';
 
 class buttonBlock extends StatelessWidget {
@@ -16,7 +17,14 @@ class buttonBlock extends StatelessWidget {
               foregroundColor: White,
               elevation: elevation0,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => createAccountPage()
+                  )
+              );
+            },
             child: const Text("Get started",
               style: TextStyle(
                   fontSize: fontSize24,
