@@ -2,33 +2,37 @@ import 'package:flutter/material.dart';
 import '../design/colors.dart';
 
 class createAccountPage extends StatelessWidget {
-
   createAccountPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     double viewPortWidth = MediaQuery.of(context).size.width;
+    double viewPortHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
         body: Container(
-          child: Stack(
-            children: [
-              Container(),
-              Container(),
-              Container(
-                  child: Image.asset(
-                      "assets/keyboard.png",
-                    fit: BoxFit.fitHeight,
-                  )
-              ),
-            ],
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.centerRight,
+            child: Container(
+                padding: EdgeInsets.zero,
+                margin: EdgeInsets.zero,
+                height: viewPortHeight,
+                width: viewPortWidth * 0.6,
+                child: Image.asset(
+                  "assets/keyboard.png",
+                  fit: BoxFit.fill,
+                )),
           ),
-        )
-    );
+          Container(),
+          Container(),
+
+        ],
+      ),
+    ));
   }
 }
-
 
 // LayoutBuilder(
 // builder: (BuildContext context, BoxConstraints constraints) {
