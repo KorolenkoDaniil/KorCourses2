@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../design/dimensions.dart';
+
+import '../../../shared/design/dimensions.dart';
 
 class imagesBlock extends StatelessWidget {
 
@@ -20,7 +21,7 @@ class imagesBlock extends StatelessWidget {
               padding: EdgeInsets.only(top: 20),
               child: Image.asset(
                 "assets/black_logo.png",
-                alignment: Alignment.topLeft,),
+                alignment: Alignment.topLeft),
               width: width60,
             ),
 

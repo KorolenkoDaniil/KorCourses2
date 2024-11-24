@@ -13,7 +13,6 @@ class keyboardImage extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: Container(
-        padding: EdgeInsets.zero,
         margin: EdgeInsets.zero,
         width: viewPortWidth * widthCoefficient,
         height: viewPortHeight,

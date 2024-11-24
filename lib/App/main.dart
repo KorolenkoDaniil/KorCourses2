@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/Homepage/homePage.dart';
+
+import '../pages/Home/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,6 @@ class MyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return homePage();
+    return home();
   }
 }
