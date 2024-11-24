@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
 
 class keyboardImage extends StatelessWidget {
+  final double width;
+  final double height;
+  final Alignment alignment;
 
-  final double viewPortWidth;
-  final double viewPortHeight;
-  final double widthCoefficient;
-
-  const keyboardImage ({Key? key, required this.viewPortWidth, required this.widthCoefficient, required this.viewPortHeight}) : super(key: key);
+  const keyboardImage ({Key? key,
+    required this.alignment,
+    required this.width,
+    required this.height,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: Alignment.centerRight,
+      alignment: alignment,
       child: Container(
         margin: EdgeInsets.zero,
-        width: viewPortWidth * widthCoefficient,
-        height: viewPortHeight,
+        width: width,
+        height: height,
         child: Image.asset(
           "assets/keyboard.png",
           fit: BoxFit.fill,

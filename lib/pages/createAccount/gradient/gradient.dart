@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 class gradient extends StatelessWidget {
 
-  const gradient(
-      {Key? key}) : super(key: key);
+  final Alignment begin;
+  final Alignment end;
+
+  const gradient( {Key? key, required this.begin, required this.end}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +13,8 @@ class gradient extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
+            begin: begin,
+            end: end,
             colors: [
               Color(0xFF525461), // #525461 0%
               Color(0xFF525461), // rgba(82, 84, 97, 1) 20%

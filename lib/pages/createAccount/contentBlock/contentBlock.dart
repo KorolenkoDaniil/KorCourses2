@@ -3,21 +3,24 @@ import 'package:korcourses/pages/CreateAccount/createAccount.dart';
 
 import 'package:korcourses/shared/design/colors.dart';
 import 'package:korcourses/shared/design/textStyles.dart';
-
 import '../../../shared/buttons/button.dart';
 import '../../../shared/design/dimensions.dart';
 import '../topDachBoard/topDashBoard.dart';
 import 'inputsBlock/longInputBlock.dart';
 
 class contentBlock extends StatelessWidget {
-  const contentBlock({Key? key}) : super(key: key);
+
+  final double logoWidth;
+
+  const contentBlock({Key? key, required this.logoWidth}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const topDashBoard(),
+        topDashBoard(logoWidth: logoWidth),
+
         const SizedBox(height: height75),
         Text("Create a new account", style: styleWhitBold32),
         const SizedBox(height: height50),
