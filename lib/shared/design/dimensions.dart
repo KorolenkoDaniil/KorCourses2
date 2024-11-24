@@ -6,6 +6,7 @@ const double height75 = 75;
 const double height50 = 50;
 const double height20 = 20;
 const double height40 = 40;
+const double height56 = 56;
 
 const double padding20 = 20;
 

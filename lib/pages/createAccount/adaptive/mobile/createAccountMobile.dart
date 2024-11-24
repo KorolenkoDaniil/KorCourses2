@@ -4,13 +4,13 @@ import '../../contentBlock/contentBlock.dart';
 
 class createAccountMobile extends StatelessWidget {
   final double logoCoefficient;
-  // final double dashBoardTextFont;
-
+  final double bigTextFont;
 
   createAccountMobile(
       {Key? key,
         required this.logoCoefficient,
-        // required this.dashBoardTextFont
+        required this.bigTextFont,
+
       }) : super(key: key);
 
   @override
@@ -19,8 +19,7 @@ class createAccountMobile extends StatelessWidget {
     double viewPortWidth = MediaQuery.of(context).size.width;
 
     return SafeArea(
-        child: contentBlock(logoWidth: viewPortWidth * logoCoefficient)
-      // child: contentBlock(logoWidth: viewPortWidth * logoCoefficient, dashBoardTextFont: dashBoardTextFont,)
+        child: contentBlock(logoWidth: viewPortWidth * logoCoefficient, bigTextFont: bigTextFont)
     );
   }
 }

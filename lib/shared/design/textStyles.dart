@@ -2,19 +2,12 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'dimensions.dart';
 
-const TextStyle styleWhitBold32 = TextStyle(
+const TextStyle styleWhitBold = TextStyle(
   color: White,
   fontFamily: "Open-Sans",
-  fontSize: fontSize32,
   fontWeight: FontWeight.bold,
 );
 
-const TextStyle styleWhitBold24 = TextStyle(
-  color: White,
-  fontFamily: "Open-Sans",
-  fontSize: fontSize24,
-  fontWeight: FontWeight.bold,
-);
 
 const TextStyle styleBlackBold24 = TextStyle(
     fontSize: fontSize24,

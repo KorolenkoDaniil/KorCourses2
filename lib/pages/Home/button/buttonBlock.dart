@@ -11,7 +11,7 @@ class buttonBlock extends StatelessWidget {
     return Expanded(
         child: Container(
             alignment: Alignment.centerLeft,
-            child: accentButton(text: 'Get Started', backgroundColor: AccentColor, textStyle: styleWhitBold32)
+            child: accentButton(text: 'Get Started', backgroundColor: AccentColor, textStyle: styleWhitBold.copyWith(fontSize: 32))
         )
     );
   }

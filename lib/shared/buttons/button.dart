@@ -13,8 +13,8 @@ class customButton extends StatelessWidget {
     Key? key,
     required this.text,
     required this.textStyle,
-    required this.onTap,
-    required this.heightCoefficient
+    // required this.onTap,
+    required this.heightCoefficient, required this.onTap
   }) : super(key: key);
 
   @override
