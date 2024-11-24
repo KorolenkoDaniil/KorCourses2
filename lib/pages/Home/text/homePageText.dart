@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../design/dimensions.dart';
+import '../../../shared/design/dimensions.dart';
+import '../../../shared/design/textStyles.dart';
 
 class homePageText extends StatelessWidget {
   final double height;
@@ -16,21 +17,14 @@ class homePageText extends StatelessWidget {
         children: [
           Text(
             "Advanced\ncomputing expert",
-            style: TextStyle(
-              fontSize: fontSize24,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Open-Sans",
-            ),
+            style: styleBlackBold24
           ),
 
           Spacer(),
 
           Text(
             "Take a step towards success – your ideas, experience and hard work will be transformed into real results with our coding courses",
-            style: TextStyle(
-              fontSize: fontSize16,
-              fontFamily: "Open-Sans",
-            ),
+            style: styleBlackRegular16
           )
         ],
       ),

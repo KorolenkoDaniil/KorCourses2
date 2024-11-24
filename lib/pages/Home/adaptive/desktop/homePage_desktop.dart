@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/Homepage/button/buttonBlock.dart';
 
-import '../../../design/colors.dart';
-import '../../../design/dimensions.dart';
+import '../../../../shared/design/colors.dart';
+import '../../../../shared/design/dimensions.dart';
+import '../../button/buttonBlock.dart';
 import '../../text/homePageText.dart';
 
-class homePageLandscape extends StatelessWidget {
+class homeLandscape extends StatelessWidget {
 
   final double imageHeightCoefficient;
   final double imageWidthCoefficient;
   final double leftTopPadding;
   final double leftBlockWidthCoefficient;
 
-  homePageLandscape({Key? key, required this.imageHeightCoefficient, required this.imageWidthCoefficient, required this.leftTopPadding, required this.leftBlockWidthCoefficient}) : super(key: key);
+  homeLandscape({Key? key, required this.imageHeightCoefficient, required this.imageWidthCoefficient, required this.leftTopPadding, required this.leftBlockWidthCoefficient}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class homePageLandscape extends StatelessWidget {
                 ])),
             Expanded(
               child: Align(
-                alignment: Alignment.topRight, // Прижать картинку к правому верхнему углу
+                alignment: Alignment.topRight,
                 child: Container(
                   height: viewPortHeight * imageHeightCoefficient,
                   width: viewPortWidth * imageWidthCoefficient,

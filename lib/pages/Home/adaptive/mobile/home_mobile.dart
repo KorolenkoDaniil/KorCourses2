@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/Homepage/button/buttonBlock.dart';
-import 'package:korcourses/Homepage/images/imagesBlock.dart';
-import 'package:korcourses/Homepage/text/homePageText.dart';
 
-import '../../../design/colors.dart';
+import '../../../../shared/design/colors.dart';
+import '../../button/buttonBlock.dart';
+import '../../images/imagesBlock.dart';
+import '../../text/homePageText.dart';
 
-
-class homePage_mobile extends StatelessWidget {
-  homePage_mobile({Key? key}) : super(key: key);
+class homeMobile extends StatelessWidget {
+  homeMobile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
