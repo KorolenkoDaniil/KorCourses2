@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/pages/Home/adaptive/mobile/home_mobile.dart';
+import 'package:korcourses/pages/Home/adaptive/home_extra_small.dart';
+import 'package:korcourses/pages/Home/adaptive/home_small.dart';
+import 'package:korcourses/pages/Home/adaptive/home_large.dart';
+import 'package:korcourses/pages/Home/adaptive/home_medium.dart';
 
 import '../../shared/design/colors.dart';
-import 'adaptive/desktop/homePage_desktop.dart';
+import 'adaptive/home_extra_large.dart';
 
 class home extends StatelessWidget {
   home({Key? key}) : super(key: key);
@@ -13,18 +16,16 @@ class home extends StatelessWidget {
         backgroundColor: BackgroundColor,
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
-            if (constraints.maxWidth <= 480)
-              return homeMobile();
-            else if (constraints.maxWidth > 480 && constraints.maxWidth <= 580)
-              return homeLandscape(imageHeightCoefficient: 0.4, imageWidthCoefficient: 0.55, leftTopPadding: 25, leftBlockWidthCoefficient: 0.4);
-            else if (constraints.maxWidth > 580 && constraints.maxWidth <= 780)
-              return homeLandscape(imageHeightCoefficient: 0.5, imageWidthCoefficient: 0.6, leftTopPadding: 25, leftBlockWidthCoefficient: 0.4);
-            else if (constraints.maxWidth > 780 && constraints.maxWidth < 880)
-              return homeLandscape(imageHeightCoefficient: 0.55, imageWidthCoefficient: 0.65, leftTopPadding: 30, leftBlockWidthCoefficient: 0.4);
-            else if (constraints.maxWidth > 880 && constraints.maxWidth < 1000)
-              return homeLandscape(imageHeightCoefficient: 0.6, imageWidthCoefficient: 0.65, leftTopPadding: 30, leftBlockWidthCoefficient: 0.4);
+            if (constraints.maxWidth <= 570)
+              return home_extra_small();
+            else if (constraints.maxWidth > 570 && constraints.maxWidth <= 768)
+              return home_small();
+            else if (constraints.maxWidth > 768 && constraints.maxWidth <= 992)
+              return home_medium(imageHeightCoefficient: 1, imageWidthCoefficient: 1, leftTopPadding: 1, leftBlockWidthCoefficient: 1);
+            else if (constraints.maxWidth > 992 && constraints.maxWidth < 1200)
+              return home_large(imageHeightCoefficient: 1, imageWidthCoefficient: 1, leftTopPadding: 1, leftBlockWidthCoefficient: 1);
             else
-              return homeLandscape(imageHeightCoefficient: 0.65, imageWidthCoefficient: 0.45, leftTopPadding: 35, leftBlockWidthCoefficient: 0.4);
+              return home_large(imageHeightCoefficient: 1, imageWidthCoefficient: 1, leftTopPadding: 1, leftBlockWidthCoefficient: 1);
           },
       )
     );

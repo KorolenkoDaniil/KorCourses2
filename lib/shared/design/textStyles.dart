@@ -9,6 +9,12 @@ const TextStyle styleWhitBold = TextStyle(
 );
 
 
+const TextStyle styleBlackBold = TextStyle(
+  fontFamily: "Open-Sans",
+  fontWeight: FontWeight.bold,
+);
+
+
 const TextStyle styleBlackBold24 = TextStyle(
     fontSize: fontSize24,
     fontWeight: FontWeight.bold,

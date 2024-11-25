@@ -15,9 +15,10 @@ class button1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SizedBox(
+    return  Container(
       width: width,
       height: height56,
+      margin: EdgeInsets.only(left: 50, right: 50),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AccentColor,

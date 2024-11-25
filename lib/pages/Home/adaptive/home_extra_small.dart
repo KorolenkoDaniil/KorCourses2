@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:korcourses/widgets/home/imagesBlock.dart';
 
-import '../../../../shared/design/colors.dart';
-import '../../button/buttonBlock.dart';
-import '../../images/imagesBlock.dart';
-import '../../text/homePageText.dart';
+import '../../../shared/design/colors.dart';
 
-class homeMobile extends StatelessWidget {
-  homeMobile({Key? key}) : super(key: key);
+class home_extra_small extends StatelessWidget {
+
+  home_extra_small({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,9 +22,7 @@ class homeMobile extends StatelessWidget {
               margin: EdgeInsets.only(left: 20),
               child: Column(
                 children: [
-                  imagesBlock(height: viewPortHeight * 0.4, width: viewPortWidth * 0.7),
-                  homePageText(height: viewPortHeight * 0.35),
-                  buttonBlock()
+                    imagesBlock(height: viewPortHeight * 0.4, imageWidth: (viewPortWidth - 90) *  0.9)
                 ],
               ),
             )

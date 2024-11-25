@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 
-import '../../../shared/design/dimensions.dart';
+import '../../shared/design/dimensions.dart';
 
 class imagesBlock extends StatelessWidget {
 
   final double height;
-  final double width;
+  final double imageWidth;
 
-  imagesBlock({Key? key, required this.height, required this.width}) : super(key: key);
+  imagesBlock({Key? key, required this.height, required this.imageWidth}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
+
         height: height,
+
         child: Row(
           children: [
             Container(
@@ -29,12 +31,11 @@ class imagesBlock extends StatelessWidget {
 
             Container(
               height: height,
-              width: width,
               padding: EdgeInsets.zero,
               child: Image.asset(
                 "assets/Mask group.png",
                 alignment: Alignment.topLeft,
-                fit: BoxFit.fill,
+                fit: BoxFit.fitWidth,
               ),
             ),
           ],
