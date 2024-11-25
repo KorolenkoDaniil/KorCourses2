@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/shared/design/colors.dart';
-import 'package:korcourses/shared/design/textStyles.dart';
-import '../../../shared/buttons/accentButton.dart';
+import 'package:korcourses/pages/CreateAccount/createAccount.dart';
+import 'package:korcourses/shared/buttons/button1.dart';
 
 class buttonBlock extends StatelessWidget {
   const buttonBlock({Key? key}) : super(key: key);
@@ -11,8 +10,16 @@ class buttonBlock extends StatelessWidget {
     return Expanded(
         child: Container(
             alignment: Alignment.centerLeft,
-            child: accentButton(text: 'Get Started', backgroundColor: AccentColor, textStyle: styleWhitBold.copyWith(fontSize: 32))
+            child: button1(buttonText: "Get Started",  onTap: () => toCreateAccountPage(context), width: 300, fontSize: 32,)
         )
     );
   }
 }
+
+void toCreateAccountPage (BuildContext context){
+  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => createAccountPage()),
+  );
+}
+

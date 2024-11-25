@@ -44,18 +44,19 @@ class blockOfInputs extends StatelessWidget {
               child: input1(inputText: 'Password'),
             ),
 
+            SizedBox(height: 20),
             SizedBox(
               width: 492,
-              child: button1(buttonText: 'Create new account', onTap: () => toCreate(context)),
+              child: button1(buttonText: 'Create new account', onTap: () => toCreate(context), width: 492, fontSize: 20),
             ),
           ],
         ));
   }
 }
 
-
 void toCreate (BuildContext context){
-  Navigator.push(context, MaterialPageRoute(builder: (context) => home()));
+
+  // Navigator.push(context, MaterialPageRoute(builder: (context) => home()));
 }
 
 
