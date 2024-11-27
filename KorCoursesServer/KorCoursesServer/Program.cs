@@ -1,21 +1,38 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Добавляем сервисы для работы с контроллерами
+// Добавляем CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin() // Разрешить запросы с любого домена
+               .AllowAnyMethod() // Разрешить любые HTTP-методы
+               .AllowAnyHeader(); // Разрешить любые заголовки
+    });
+});
+
 builder.Services.AddControllers();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
-// Настройка конвейера обработки запросов
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
+    app.UseHsts();
 }
 
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+// Используем CORS
+app.UseCors("AllowAll");
 
-app.MapControllers();  // Это важно для работы с API
+app.UseAuthorization();
+
+app.MapRazorPages();
+app.MapControllers();
 
 app.Run();

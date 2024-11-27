@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KorCoursesServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2a22949307d807262aa4b34c116018db0717ccd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6528d7b8cff4f4cc0c432c415adf56436f0e44e")]
 [assembly: System.Reflection.AssemblyProductAttribute("KorCoursesServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KorCoursesServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

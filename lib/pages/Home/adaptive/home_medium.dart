@@ -4,15 +4,21 @@ import '../../../shared/design/colors.dart';
 
 import '../../../widgets/home/largeContentBlock.dart';
 
-
-class home_medium extends StatelessWidget {
-
+class HomeMedium  extends StatelessWidget {
   final double imageHeightCoefficient;
   final double imageWidthCoefficient;
   final double leftTopPadding;
   final double leftBlockWidthCoefficient;
+  final Function() onTap;
 
-  home_medium({Key? key, required this.imageHeightCoefficient, required this.imageWidthCoefficient, required this.leftTopPadding, required this.leftBlockWidthCoefficient}) : super(key: key);
+  HomeMedium(
+      {Key? key,
+      required this.imageHeightCoefficient,
+      required this.imageWidthCoefficient,
+      required this.leftTopPadding,
+      required this.leftBlockWidthCoefficient,
+      required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +31,13 @@ class home_medium extends StatelessWidget {
               color: BackgroundColor,
             ),
             child: Container(
-              margin: EdgeInsets.only(left: 20),
-                child: largeContentBlock(
-                  height: viewPortHeight * 0.7,
-                  imageWidth: (viewPortWidth - 20) / 2,
-                  bigTextFont: 28,
-                  smallTextFont: 16,
+                margin: EdgeInsets.only(left: 20),
+                child: LargeContentBlock(
+                    height: viewPortHeight * 0.7,
+                    imageWidth: (viewPortWidth - 20) / 2,
+                    bigTextFont: 28,
+                    smallTextFont: 16,
+                    onTap: onTap
                 )
             )
         )

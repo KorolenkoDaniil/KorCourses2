@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\My data\\KorCourses_f\\KorCoursesServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|c:\\my data\\korcourses_f\\korcoursesserver\\korcoursesserver\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|solutionrelative:korcoursesserver\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|c:\\my data\\korcourses_f\\korcoursesserver\\korcoursesserver\\entities\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|solutionrelative:korcoursesserver\\entities\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|c:\\my data\\korcourses_f\\korcoursesserver\\korcoursesserver\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|solutionrelative:korcoursesserver\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|c:\\my data\\korcourses_f\\korcoursesserver\\korcoursesserver\\korcoursesserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|solutionrelative:korcoursesserver\\korcoursesserver.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|c:\\my data\\korcourses_f\\korcoursesserver\\korcoursesserver\\korcoursesserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{CD623457-3620-49AB-BBF5-03F26194FC37}|KorCoursesServer\\KorCoursesServer.csproj|solutionrelative:korcoursesserver\\korcoursesserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Entities\\AppContext.cs",
+              "RelativeDocumentMoniker": "KorCoursesServer\\Entities\\AppContext.cs",
+              "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Entities\\AppContext.cs",
+              "RelativeToolTip": "KorCoursesServer\\Entities\\AppContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T07:42:05.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "apiController.cs",
-              "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Controllers\\apiController.cs",
-              "RelativeDocumentMoniker": "KorCoursesServer\\Controllers\\apiController.cs",
-              "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Controllers\\apiController.cs",
-              "RelativeToolTip": "KorCoursesServer\\Controllers\\apiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "KorCoursesServer\\Entities\\User.cs",
+              "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Entities\\User.cs",
+              "RelativeToolTip": "KorCoursesServer\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T11:01:13.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "KorCoursesServer\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "KorCoursesServer\\Controllers\\ApiController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwC0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T11:28:28.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Program.cs",
               "RelativeDocumentMoniker": "KorCoursesServer\\Program.cs",
               "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Program.cs",
               "RelativeToolTip": "KorCoursesServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-25T11:26:18.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "KorCoursesServer\\Properties\\launchSettings.json",
               "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\Properties\\launchSettings.json",
               "RelativeToolTip": "KorCoursesServer\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-11-25T11:25:30.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "KorCoursesServer",
               "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\KorCoursesServer.csproj",
               "RelativeDocumentMoniker": "KorCoursesServer\\KorCoursesServer.csproj",
@@ -81,19 +111,6 @@
               "RelativeToolTip": "KorCoursesServer\\KorCoursesServer.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-25T11:25:27.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KorCoursesServer",
-              "DocumentMoniker": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\KorCoursesServer.csproj",
-              "RelativeDocumentMoniker": "KorCoursesServer\\KorCoursesServer.csproj",
-              "ToolTip": "C:\\My data\\KorCourses_f\\KorCoursesServer\\KorCoursesServer\\KorCoursesServer.csproj",
-              "RelativeToolTip": "KorCoursesServer\\KorCoursesServer.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T11:24:47.556Z",
               "EditorCaption": ""
             }
           ]

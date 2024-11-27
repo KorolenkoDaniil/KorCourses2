@@ -4,19 +4,21 @@ import 'package:korcourses/shared/design/dimensions.dart';
 import '../../shared/buttons/button1.dart';
 import '../../shared/design/textStyles.dart';
 
-class largeContentBlock extends StatelessWidget {
+class LargeContentBlock extends StatelessWidget {
   final double height;
   final double imageWidth;
   final double bigTextFont;
   final double smallTextFont;
+  final Function() onTap;
 
-  const largeContentBlock({
-    Key? key,
+  const LargeContentBlock({
+    super.key,
     required this.height,
     required this.imageWidth,
     required this.bigTextFont,
     required this.smallTextFont,
-  }) : super(key: key);
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +52,11 @@ class largeContentBlock extends StatelessWidget {
 
                 SizedBox(height: MediaQuery.of(context).size.height * 0.15),
                 Center(
-                  child: button1(
+                  child: Button1(
                     buttonText: 'Get started',
                     width: MediaQuery.of(context).size.width * 0.5 * 0.8,
                     fontSize: 32,
-                    onTap: () {},
+                    onTap: onTap
                   ),
                 ),
               ],
@@ -65,8 +67,8 @@ class largeContentBlock extends StatelessWidget {
           Expanded(
             child: Container(
               height: height,
-              alignment: Alignment.topRight, // Изображение в правом верхнем углу
-              padding: EdgeInsets.only(top: 10, right: 10), // Отступы от верхнего и правого края
+              alignment: Alignment.topRight,
+              padding: EdgeInsets.only(top: 10, right: 10),
               child: Image.asset(
                 "assets/Mask group.png",
                 fit: BoxFit.fitWidth,
@@ -78,3 +80,6 @@ class largeContentBlock extends StatelessWidget {
     );
   }
 }
+
+
+

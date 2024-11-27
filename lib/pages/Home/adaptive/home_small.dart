@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
 import '../../../shared/design/colors.dart';
-import '../../../widgets/home/imagesBlock.dart';
+import '../../../widgets/home/smallContentBlock.dart';
 
-class home_small extends StatelessWidget {
+class HomeSmall extends StatelessWidget {
 
-  home_small({Key? key}) : super(key: key);
+  final Function() onTap;
+
+  const HomeSmall({super.key,
+    required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +25,12 @@ class home_small extends StatelessWidget {
               margin: EdgeInsets.only(left: 20),
               child: Column(
                 children: [
-                  imagesBlock(height: viewPortHeight * 0.45, imageWidth:  (viewPortWidth - 90) * 0.7)
+                  SmallContentBlock(
+                      onTap: onTap,
+                      height: viewPortHeight * 0.4,
+                      imageWidth: (viewPortWidth - 90) *  0.9,
+                      bigTextFont: 20,
+                      smallTextFont: 14)
                 ],
               ),
             )

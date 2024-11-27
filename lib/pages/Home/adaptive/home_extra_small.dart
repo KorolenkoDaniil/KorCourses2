@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:korcourses/widgets/home/imagesBlock.dart';
+import 'package:korcourses/widgets/home/smallContentBlock.dart';
 
 import '../../../shared/design/colors.dart';
 
-class home_extra_small extends StatelessWidget {
+class Home_extra_small extends StatelessWidget {
 
-  home_extra_small({Key? key}) : super(key: key);
+  final Function() onTap;
+
+  Home_extra_small({Key? key, required this.onTap}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +24,12 @@ class home_extra_small extends StatelessWidget {
               margin: EdgeInsets.only(left: 20),
               child: Column(
                 children: [
-                    imagesBlock(height: viewPortHeight * 0.4, imageWidth: (viewPortWidth - 90) *  0.9)
+                  SmallContentBlock(
+                    onTap: onTap,
+                    height: viewPortHeight * 0.4,
+                    imageWidth: (viewPortWidth - 90) *  0.9,
+                    bigTextFont: 20,
+                    smallTextFont: 14)
                 ],
               ),
             )
